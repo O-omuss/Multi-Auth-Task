@@ -29,7 +29,7 @@
                                     <th>Gender</th>
                                     <th>Active on Social</th>
                                     <th>Currently</th>
-                                    {{-- <th>Profile Image</th> --}}
+                                    <th>Profile Image</th>
                                     <th>Status</th>
                                     <th>Change Status</th>
                                 </tr>
@@ -48,11 +48,11 @@
                                         <td>@if($pc->active_on_social) Yes @else No @endif</td>
                                         
                                         <td>{{$pc->currently}}</td>
-                                        {{-- <td>@if (isset($pc->profile_image))
+                                        <td>@if (isset($pc->profile_image))
                                             <img src="{{ asset($pc->profile_image) }}" style="width:10%">
                                             @else
                                             N/A
-                                            @endif</td> --}}
+                                            @endif</td>
                                         <td>@if($pc->status == 0) Pending  @endif</td>
                                         <td>
                                             <a href="{{url('admin/approve',$pc->client_id)}}" class="btn btn-success">Approve</a>
@@ -105,7 +105,7 @@
                                     <th>Gender</th>
                                     <th>Active on Social</th>
                                     <th>Currently</th>
-                                    {{-- <th>Profile Image</th> --}}
+                                    <th>Profile Image</th>
                                     <th>Status</th>
                                 </tr>
                                 </thead>
@@ -123,11 +123,11 @@
                                         <td>@if($ac->active_on_social) Yes @else No @endif</td>
                                         
                                         <td>{{$ac->currently}}</td>
-                                        {{-- <td>@if (isset($ac->profile_image))
+                                        <td>@if (isset($ac->profile_image))
                                             <img src="{{ asset($ac->profile_image) }}" style="width:10%">
                                             @else
                                             N/A
-                                            @endif</td> --}}
+                                            @endif</td>
                                         <td>@if($ac->status == 1) Approved  @endif</td>
                                     </tr>
                                     </tbody>
@@ -177,7 +177,7 @@
                                     <th>Gender</th>
                                     <th>Active on Social</th>
                                     <th>Currently</th>
-                                    {{-- <th>Profile Image</th> --}}
+                                    <th>Profile Image</th>
                                     <th>Status</th>
                                 </tr>
                                 </thead>
@@ -195,11 +195,11 @@
                                         <td>@if($rc->active_on_social) Yes @else No @endif</td>
                                         
                                         <td>{{$rc->currently}}</td>
-                                        {{-- <td>@if (isset($rc->profile_image))
+                                        <td>@if (isset($rc->profile_image))
                                             <img src="{{ asset($rc->profile_image) }}" style="width:10%">
                                             @else
                                             N/A
-                                            @endif</td> --}}
+                                            @endif</td>
                                         <td>@if($rc->status == 2) Rejected  @endif</td>
                                     </tr>
                                     </tbody>
